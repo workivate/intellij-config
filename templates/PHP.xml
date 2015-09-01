@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="PHP">
+  <template name="_c" value="public function __construct($END$)&#10;{&#10;}" description="Constructor" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
+
