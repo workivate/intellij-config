@@ -5,5 +5,24 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="gsl" value="/** @var $1$ $$$2$ */&#10;$$$2$ = $this-&gt;getServiceLocator()-&gt;get($1$::class);$END$" description="$varName = getServiceLocator()-&gt;get($className::class); /** @var $className $$var */" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="gsm" value="/** @var $1$ $$$2$ */&#10;$$$2$ = $this-&gt;getServiceManager()-&gt;get($1$::class);$END$" description="$varName = getServiceManager()-&gt;get($className::class); /** @var $className $$var */" toReformat="true" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name=":c" value="$END$::class" description="::class, putting the cursor before the colons" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
 
